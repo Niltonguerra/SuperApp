@@ -1,0 +1,3 @@
+[submodule "backend/python"]
+	path = backend/python
+	url = git@github.com:Niltonguerra/SuperApp_python.git
