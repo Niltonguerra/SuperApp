@@ -4,3 +4,12 @@
 [submodule "backend/javaScript"]
 	path = backend/javaScript
 	url = git@github.com:Niltonguerra/SuperApp_javascript.git
+[submodule "backend/golang"]
+	path = backend/golang
+	url = git@github.com:Niltonguerra/SuperApp_golang.git
+[submodule "backend/rust"]
+	path = backend/rust
+	url = git@github.com:Niltonguerra/SuperApp_rust.git
+[submodule "backend/java"]
+	path = backend/java
+	url = git@github.com:Niltonguerra/SuperApp_java.git
