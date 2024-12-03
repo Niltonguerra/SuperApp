@@ -19,3 +19,6 @@
 [submodule "frontend/web"]
 	path = frontend/web
 	url = git@github.com:Niltonguerra/SuperApp_web.git
+[submodule "frontend/mobile"]
+	path = frontend/mobile
+	url = git@github.com:Niltonguerra/SuperApp_mobile.git
