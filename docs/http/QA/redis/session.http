@@ -1,0 +1,26 @@
+
+
+### Obter Sessão do Redis
+GET http://localhost:3100/redisSession/getSession
+Content-Type: application/json
+
+{
+  "key": "euAmoVoce"
+}
+
+### Definir Sessão no Redis
+POST http://localhost:3100/redisSession/setSession
+Content-Type: application/json
+
+{
+  "key": "euAmoVoce",
+  "value": "teste123"
+}
+
+### Deletar Sessão do Redis
+DELETE http://localhost:3100/redisSession/deleteSession
+Content-Type: application/json
+
+{
+  "key": "euAmoVoce"
+}

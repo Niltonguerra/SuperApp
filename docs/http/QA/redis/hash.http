@@ -1,0 +1,43 @@
+
+### Obter Hash do Redis
+GET http://localhost:3100/redisHash/getHash
+Content-Type: application/json
+
+{
+  "key": "exampleKey"
+}
+
+### Atualizar Campo do Hash no Redis
+PATCH http://localhost:3100/redisHash/updateHashField
+Content-Type: application/json
+
+{
+  "key": "exampleKey",
+  "field": "nome",
+  "value": "nilton"
+}
+### Deletar Hash do Redis
+DELETE http://localhost:3100/redisHash/delete
+Content-Type: application/json
+
+{
+  "key": "exampleKey"
+}
+
+### Definir Hash no Redis
+POST http://localhost:3100/redisHash/setHash
+Content-Type: application/json
+
+{
+  "key": "exampleKey",
+  "value": {
+    "CPF": "852.152.040-98",
+    "data_nascimento": "10/05/2002",
+    "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petlove.com.br%2Fdicas%2Fgatinhos-fofos-veja-fotos&psig=AOvVaw1cwBUpb5rbjeupO--X1yhV&ust=1716870022350000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCL_K_9rIYDFQAAAAAdAAAAABAJ",
+    "endereco": "Rua Ulisses varissios, 212, Jardim Rosas, Franco da Rocha, SP, Brasil",
+    "nome": "Frederico Álves da Silva",
+    "email": "niltondg.39@gmail.com",
+    "senha": "Ndg.100502Ndg",
+    "telefone": "11912345678"
+  }
+}

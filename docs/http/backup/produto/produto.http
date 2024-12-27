@@ -1,0 +1,46 @@
+### Listar Produto
+GET http://localhost:3100/product/665d223d513adfd54f9430b8
+User-Agent: insomnia/9.2.0
+
+
+### Listar Todos os Produtos
+GET http://localhost:3100/product/todos
+User-Agent: insomnia/9.2.0
+
+
+
+### Criar Produto
+POST http://localhost:3000/product
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+
+{
+    "nome": "salada",
+    "preco": 23.50,
+    "descricao": "Todo mundo gosta. Quem é Meu Méqui, ama.",
+    "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.washingtonpost.com%2Frecipes%2Fclassic-grilled-hamburger%2F&psig=AOvVaw1WWNww0NYc1Cnvdv2t3xZh&ust=1716873251912000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCRs7SJrYYDFQAAAAAdAAAAABAE",
+    "quantidade": 117,
+    "tags": ["salada", "fresco", "saudavel", "alface"],
+    "store_id": "665d268ae804abfbb2eab420"
+}
+
+
+### Editar Produto
+PUT http://localhost:3000/product/66541772b27f5e26857881e0
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+
+{
+    "nome": "hamburger",
+    "preco": 23.50,
+    "descricao": "Todo mundo gosta. Quem é Meu Méqui, ama.",
+    "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.washingtonpost.com%2Frecipes%2Fclassic-grilled-hamburger%2F&psig=AOvVaw1WWNww0NYc1Cnvdv2t3xZh&ust=1716873251912000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCRs7SJrYYDFQAAAAAdAAAAABAE",
+    "quantidade": 117,
+    "credentials": "f2r165sg6fd5f16df"
+}
+
+### Deletar Produto
+DELETE http://localhost:3000/product/665cd63685fb93d179284e22
+User-Agent: insomnia/9.2.0
+
+

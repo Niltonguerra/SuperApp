@@ -1,0 +1,10 @@
+### Lista Produtos por Loja
+GET http://localhost:3100/product/listaProdutosPorLoja/665d11515b322918ff584d32
+User-Agent: insomnia/9.2.0
+
+
+### Recomendar Produtos
+GET http://localhost:3100/recomendacao/produto/665d233eeecfcd2c124f49ba
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+

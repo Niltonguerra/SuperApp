@@ -1,0 +1,63 @@
+### Lista Item
+GET http://localhost:3000/store/665d11515b322918ff584d32
+User-Agent: insomnia/9.2.0
+
+
+### Lista Todos
+GET http://localhost:3100/store
+User-Agent: insomnia/9.2.0
+
+
+### Criar Item
+POST http://localhost:3000/store
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+
+{
+    "nome": "cantina do Chico bento",
+    "CNPJ": "45.039.237/0001-14",
+    "senha": "Ndg.100502Ndg",
+    "descricao": "uma loja de hamhurbers",
+    "email": "SBT.Maua@amerinacas.com",
+    "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.washingtonpost.com%2Frecipes%2Fclassic-grilled-hamburger%2F&psig=AOvVaw1WWNww0NYc1Cnvdv2t3xZh&ust=1716873251912000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCRs7SJrYYDFQAAAAAdAAAAABAE",
+    "hor_abertura": "07:30",
+    "hor_encerramento": "19:30",
+    "telefone": "932313383",
+    "endereco": "Rua eu amo você, avenida mora no meu coração, 212"
+}
+
+
+### Editar Item
+PUT http://localhost:3000/store/66541512b27f5e26857881d4
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+
+{
+    "nome": "Mcdonalds",
+    "descricao": "a melhor escolha quando você está com fome!",
+    "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.unimart.com.br%2Flojas%2F425%2Fmcdonald-s&psig=AOvVaw3PcJ3Wn6StvmXK7mHi_uGC&ust=1716872334733000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLiHxf6FrYYDFQAAAAAdAAAAABAE",
+    "hor_abertura": "2024-05-27T05:04:11.091Z",
+    "hor_encerramento": "2024-05-27T05:04:11.091Z",
+    "confirmed": "true",
+    "credentials": "1sa5d1asd2as1d6",
+    "endereco": "Rua Ulisses varissios,212,Jardim Rosas,Franco da Rocha, SP, Brasil",
+    "produto": ["1", "2", "3", "4"]
+}
+
+
+
+### Deletar Item
+DELETE http://localhost:3000/store/665cc4c629caae84a27051f9
+User-Agent: insomnia/9.2.0
+
+### Login Request
+POST http://localhost:3100/auth/store
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+
+{
+    "email": "SBT.Maua@amerinacas.com",
+    "senha": "Ndg.100502Ndg"
+}
+
+

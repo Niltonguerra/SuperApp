@@ -1,0 +1,8 @@
+### Teste de Envio de Email
+POST http://localhost:3100/email/testeEnviarEmail
+Content-Type: application/json
+User-Agent: insomnia/9.3.3
+
+{
+    "email": "email@123123123"
+}

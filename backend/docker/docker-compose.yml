@@ -1,0 +1,36 @@
+services:
+  redis:
+    extends:
+      file: ./message/redis/redis-docker-compose.yml
+      service: redis
+    networks:
+      - app-network
+    volumes:
+      - redis-data:/data/db
+
+  mongo:
+    extends:
+      file: ./db/mongo/mongo-docker-compose.yml
+      service: mongo
+    networks:
+      - app-network
+    volumes:
+      - mongo_data:/data/db
+
+  # nest:
+  #   extends:
+  #     file: ../javaScript/docker/js-docker-compose.yml
+  #     service: nest
+  #   networks:
+  #     - app-network
+
+volumes:
+  redis-data:
+    driver: local
+  mongo_data:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge
+    external: true

@@ -1,0 +1,87 @@
+
+### Criar Usuário e Validar
+POST http://localhost:3100/user/validaCadastro
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+
+{
+    "CPF": "852.152.040-98",
+    "data_nascimento": "10/05/2002",
+    "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petlove.com.br%2Fdicas%2Fgatinhos-fofos-veja-fotos&psig=AOvVaw1cwBUpb5rbjeupO--X1yhV&ust=1716870022350000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCL_K_9rIYDFQAAAAAdAAAAABAJ",
+    "endereco": "Rua Ulisses varissios, 212, Jardim Rosas, Franco da Rocha, SP, Brasil",
+    "nome": "Frederico Álves da Silva",
+    "email": "niltondg.39@gmail.com",
+    "senha": "Ndg.100502Ndg",
+    "telefone": "11912345678"
+}
+
+
+### Criar Usuário
+POST http://localhost:3100/user/create
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+
+{
+    "CPF": "852.152.040-98",
+    "data_nascimento": "10/05/2002",
+    "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petlove.com.br%2Fdicas%2Fgatinhos-fofos-veja-fotos&psig=AOvVaw1cwBUpb5rbjeupO--X1yhV&ust=1716870022350000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCL_K_9rIYDFQAAAAAdAAAAABAJ",
+    "endereco": "Rua Ulisses varissios, 212, Jardim Rosas, Franco da Rocha, SP, Brasil",
+    "nome": "Frederico Álves da Silva",
+    "email": "niltondg.39@gmail.com",
+    "senha": "Ndg.100502Ndg",
+    "telefone": "11912345678"
+}
+
+
+### Lista por Campo
+GET http://localhost:3100/user/search/nome/Frederico Álves da Silva
+User-Agent: insomnia/9.2.0
+
+
+### Lista Usuário pelo ID
+GET http://localhost:3100/user/id/665c98596a760b65b193d0d6
+User-Agent: insomnia/9.2.0
+id=6656516452ebf9590ce2dfff
+
+### Lista Todos os Usuários
+GET http://localhost:3100/user/todos
+User-Agent: insomnia/9.2.0
+
+
+### Editar Usuário
+PUT http://localhost:3100/user/update
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkZyZWRlcmljby40MDMyOUBnbWFpbC5jb20iLCJpZCI6IjY2ZGU1ODhkNjZhOWNlNWJmNThiNjdiMSIsImlhdCI6MTcyNTg0ODA1MCwiZXhwIjoxNzI1OTM0NDUwfQ.HMz2vEBSA67LzNk8xaFjekdzVeumJmvbpAPj0VcLd08
+
+{
+    "CPF": "852.152.040-98",
+    "data_nascimento": "10/05/2002",
+    "foto": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petlove.com.br%2Fdicas%2Fgatinhos-fofos-veja-fotos&psig=AOvVaw1cwBUpb5rbjeupO--X1yhV&ust=1716870022350000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCL_K_9rIYDFQAAAAAdAAAAABAJ",
+    "endereco": "Rua Ulisses varissios, 212, Jardim Rosas, Franco da Rocha, SP, Brasil",
+    "nome": "Frederico Álves da Silva",
+    "email": "Frederico.40329@gmail.com",
+    "senha": "Ndg.100502Ndg",
+    "telefone": "11912345678"
+}
+
+### Desativar Usuário
+DELETE http://localhost:3100/user/disable
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkZyZWRlcmljby40MDMyOUBnbWFpbC5jb20iLCJpZCI6IjY2ZGU1ODhkNjZhOWNlNWJmNThiNjdiMSIsImlhdCI6MTcyNTg0ODA1MCwiZXhwIjoxNzI1OTM0NDUwfQ.HMz2vEBSA67LzNk8xaFjekdzVeumJmvbpAPj0VcLd08
+
+### Consultar Usuário por Dono
+GET http://localhost:3100/user/read
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pbHRvbmRnLjM5QGdtYWlsLmNvbSIsImlkIjoiNjZlNzAwZTgzYTgwYWQ2YmJmMmZkMjc4IiwiaWF0IjoxNzI2NDMwNjI5fQ.RxPsuwWmw4Pthh36FQOLNAcP0tg-pZ7jrlARUr8eWcw
+
+
+### Login
+POST http://localhost:3100/auth-user/login
+Content-Type: application/json
+User-Agent: insomnia/9.2.0
+
+{
+    "email": "niltondg.39@gmail.com",
+    "senha": "Ndg.100502Ndg"
+}

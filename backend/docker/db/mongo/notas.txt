@@ -1,0 +1,10 @@
+acessar o container:
+ex:
+  docker exec -it <nome-do-container> /bin/bash
+  
+  deve usar esse comando abaixo para acessar o container e logar no banco de dados:
+  docker exec -it mongo-container mongosh -u root -p example --authenticationDatabase admin
+  docker exec -it <nome-do-container> mongosh -u 'usuario' -p 'senha' --authenticationDatabase admin
+
+comando para abrir o mongo compass:
+  mongodb-compass
